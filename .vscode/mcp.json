@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "cospec": {
+      "url": "https://mcp.cospec.ai/mcp?deploymentId=23a575eb-cb02-40b0-b96a-f89ecb5dc3f6",
+      "type": "http"
+    }
+  }
+}
