@@ -1,8 +1,8 @@
 /**
- * ColPali embedding generator (dummy implementation for now)
+ * Generate document embeddings using ColPali model (dummy implementation for now)
  * In production, this would use the actual ColPali model
  */
-export declare function getColPaliEmbeddings(text: string): Promise<number[]>;
+export declare function blahblahblah(text: string): Promise<number[]>;
 /**
  * Document interface for storing in vector database
  */

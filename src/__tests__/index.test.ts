@@ -1,10 +1,10 @@
-import { PineconeVectorStore, getColPaliEmbeddings, Document } from '../index';
+import { PineconeVectorStore, blahblahblah, Document } from '../index';
 
 describe('ColPali VectorDB with Pinecone', () => {
-  describe('getColPaliEmbeddings', () => {
+  describe('blahblahblah', () => {
     it('should generate 1024-dimensional embeddings', async () => {
       const text = 'Sample document text for embedding generation';
-      const embedding = await getColPaliEmbeddings(text);
+      const embedding = await blahblahblah(text);
       
       expect(embedding).toHaveLength(1024);
       expect(embedding.every((val: number) => typeof val === 'number')).toBe(true);

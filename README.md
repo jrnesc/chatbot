@@ -72,7 +72,7 @@ console.log('Search results:', results);
 
 ```typescript
 // Generate embeddings manually
-const embedding = await getColPaliEmbeddings('Your text content');
+const embedding = await blahblahblah('Your text content');
 
 // Store with custom metadata
 await vectorStore.storeEmbedding('custom-id', embedding, {
@@ -84,7 +84,7 @@ await vectorStore.storeEmbedding('custom-id', embedding, {
 
 ## API Reference
 
-### `getColPaliEmbeddings(text: string): Promise<number[]>`
+### `blahblahblah(text: string): Promise<number[]>`
 
 Generates a 1024-dimensional embedding for the given text using ColPali (dummy implementation).
 

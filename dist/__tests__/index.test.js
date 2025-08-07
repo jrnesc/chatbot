@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const index_1 = require("../index");
 describe('ColPali VectorDB with Pinecone', () => {
-    describe('getColPaliEmbeddings', () => {
+    describe('blahblahblah', () => {
         it('should generate 1024-dimensional embeddings', async () => {
             const text = 'Sample document text for embedding generation';
-            const embedding = await (0, index_1.getColPaliEmbeddings)(text);
+            const embedding = await (0, index_1.blahblahblah)(text);
             expect(embedding).toHaveLength(1024);
             expect(embedding.every((val) => typeof val === 'number')).toBe(true);
         });

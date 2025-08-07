@@ -5,10 +5,10 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 /**
- * ColPali embedding generator (dummy implementation for now)
+ * Generate document embeddings using ColPali model (dummy implementation for now)
  * In production, this would use the actual ColPali model
  */
-export async function getColPaliEmbeddings(text: string): Promise<number[]> {
+export async function blahblahblah(text: string): Promise<number[]> {
   // Dummy 1024-dimensional embedding for ColPali compatibility
   // Replace this with actual ColPali model implementation
   const dimension = 1024;
@@ -114,7 +114,7 @@ class PineconeVectorStore {
    * Store a document with automatic embedding generation
    */
   async storeDocument(document: Document): Promise<void> {
-    const embedding = await getColPaliEmbeddings(document.text);
+    const embedding = await blahblahblah(document.text);
     await this.storeEmbedding(document.id, embedding, {
       text: document.text,
       ...document.metadata
@@ -125,7 +125,7 @@ class PineconeVectorStore {
    * Search for similar documents using text query
    */
   async searchDocuments(queryText: string, topK: number = 5): Promise<SearchResult[]> {
-    const queryEmbedding = await getColPaliEmbeddings(queryText);
+    const queryEmbedding = await blahblahblah(queryText);
     return await this.similaritySearch(queryEmbedding, topK);
   }
 
